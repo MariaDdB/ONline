@@ -1,0 +1,26 @@
+<p>
+	<strong> Color: </strong>
+	<%= @backpack.color %>
+</p>
+
+<p>
+	<strong> Capacity: </strong> 
+	<%= @backpack.capacity %> <br>
+</p>
+
+<p>
+	<strong> Pockets: </strong>
+	<%= @backpack.pockets %> <br>
+</p>
+
+<p>
+	<strong> Waterproof: </strong>
+	<%= @backpack.waterproof %>
+</p>
+
+<p>
+	<%= link_to "Edit", edit_backpack_path(@backpack) %>
+	<%= link_to "Back", backpacks_path %>
+</p>
+
+<button type = "button" id = "like-button"> Like </button>

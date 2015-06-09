@@ -1,0 +1,33 @@
+<%= form_for @laptop do |f| %>
+  <p>
+    <%= f.label :brand %> <br>
+    <%= f.text_field :brand %>
+  </p>
+
+  <p>
+    <%= f.label :model %> <br>
+    <%= f.text_field :model %>
+  </p>
+
+  <p>
+    <%= f.label :processor_brand %> <br>
+    <%= f.text_field :processor_brand %>
+  </p>
+
+  <p>
+    <%= f.label :ram_size %> <br>
+    <%= f.text_field :ram_size %>
+  </p>
+
+  <p>
+    <%= f.label :price %> <br>
+    <%= f.text_field :price %>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p>
+  <%= link_to "Back", laptops_path %>
+</p>
